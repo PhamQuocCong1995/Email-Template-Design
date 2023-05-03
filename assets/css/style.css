@@ -1,0 +1,103 @@
+.header {
+  padding: 28px 0;
+}
+.header .header__container {
+  width: 1240px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+.header .header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .logo {
+  font-weight: 500;
+  font-size: 2.8rem;
+  line-height: 36px;
+  color: #ffffff;
+}
+.header .navbar .navbar__list {
+  display: flex;
+}
+.header .navbar .navbar__list .navbar__link {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #b0b0b0;
+  padding: 0 20px;
+}
+.header .header-action .header-action__login {
+  --height: 42px;
+  width: 108px;
+  border: 1px solid #fc5a5a;
+  border-radius: 8px;
+  background: transparent;
+  font-size: 1.2rem;
+  transition: 0.25s;
+}
+.header .header-action .header-action__login:hover {
+  background: #fc5a5a;
+}
+.header .header-action .header-action__start {
+  --height: 42px;
+  width: 108px;
+  font-size: 1.2rem;
+  margin-left: 16px;
+  background: transparent;
+  border: 1px solid #fc5a5a;
+  transition: 0.25s;
+}
+.header .header-action .header-action__start:hover {
+  background: #fc5a5a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #1c1c24;
+  font-size: 1.6rem;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Common */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "DM Sans", sans-serif;
+}
+
+input,
+textarea,
+select,
+button {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  --height: 58px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 212px;
+  height: var(--height);
+  line-height: var(--height);
+  background: #fc5a5a;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #ffffff;
+}/*# sourceMappingURL=style.css.map */

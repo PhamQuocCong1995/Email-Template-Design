@@ -1,0 +1,52 @@
+@import "./header";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #1c1c24;
+    font-size: 1.6rem;
+    font-family: "DM Sans", sans-serif;
+}
+
+/* Common */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "DM Sans", sans-serif;
+}
+
+input,
+textarea,
+select,
+button {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    --height: 58px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 212px;
+    height: var(--height);
+    line-height: var(--height);
+    background: #fc5a5a;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #ffffff;
+}

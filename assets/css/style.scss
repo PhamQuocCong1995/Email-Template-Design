@@ -41,7 +41,7 @@ a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    max-width: 212px;
+    min-width: 212px;
     height: var(--height);
     line-height: var(--height);
     background: #fc5a5a;

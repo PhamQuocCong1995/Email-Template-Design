@@ -28,7 +28,7 @@
 }
 .header .header-action .header-action__login {
   --height: 42px;
-  width: 108px;
+  min-width: 108px;
   border: 1px solid #fc5a5a;
   border-radius: 8px;
   background: transparent;
@@ -40,7 +40,7 @@
 }
 .header .header-action .header-action__start {
   --height: 42px;
-  width: 108px;
+  min-width: 108px;
   font-size: 1.2rem;
   margin-left: 16px;
   background: transparent;
@@ -49,6 +49,174 @@
 }
 .header .header-action .header-action__start:hover {
   background: #fc5a5a;
+}
+
+.hero {
+  margin-top: 42px;
+}
+.hero .hero__container {
+  width: 1240px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+.hero .hero__container .hero__inner {
+  display: flex;
+  justify-content: flex-start;
+}
+.hero .hero__container .hero__inner .social__sidebar {
+  width: 13%;
+  margin-top: 49px;
+  display: flex;
+  flex-direction: column;
+}
+.hero .hero__container .hero__inner .social__sidebar .social-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.hero .hero__container .hero__inner .social__sidebar .social-list .social-list__item {
+  color: #d2efff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(255, 151, 74, 0.2);
+  background: transparent;
+  transition: 0.25s;
+  margin-bottom: 12px;
+}
+.hero .hero__container .hero__inner .social__sidebar .social-list .social-list__item:hover {
+  color: #222;
+  background: #ff974a;
+  border: none;
+  cursor: pointer;
+}
+.hero .hero__container .hero__inner .social__sidebar .social-list__group {
+  display: flex;
+  flex-direction: column;
+}
+.hero .hero__container .hero__inner .social__sidebar .social-list__group .social-list__text {
+  height: 146px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1.2rem;
+  letter-spacing: 6px;
+  color: #d2efff;
+  transform: rotate(-90deg);
+  margin: 20px 0 0 7px;
+}
+.hero .hero__container .hero__inner .social__sidebar .social-list__group .social-list__downarrow {
+  margin: 20px 0 0 12px;
+}
+.hero .hero__container .hero__inner .hero__content {
+  margin-top: 15px;
+}
+.hero .hero__container .hero__inner .hero__content .hero__heading {
+  width: 522px;
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 1.16;
+  color: #ffffff;
+}
+.hero .hero__container .hero__inner .hero__content .hero__desc {
+  width: 368px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #b0b0b0;
+  margin: 12px 0 40px;
+}
+.hero .hero__container .hero__inner .hero__media .hero__media--top {
+  position: relative;
+}
+.hero .hero__container .hero__inner .hero__media .hero__media--top .hero-search {
+  width: 248px;
+  background: #1e75ff;
+  border-radius: 8px;
+  padding: 20px;
+}
+.hero .hero__container .hero__inner .hero__media .hero__media--top .hero-search .searching-form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.hero .hero__container .hero__inner .hero__media .hero__media--top .hero-search .searching-form .searching-form__submit,
+.hero .hero__container .hero__inner .hero__media .hero__media--top .hero-search .searching-form .searching-form__input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.hero .hero__container .hero__inner .hero__media .hero__media--top .hero-search .searching-form .searching-form__input::-moz-placeholder {
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 15px;
+  color: #ffffff;
+}
+.hero .hero__container .hero__inner .hero__media .hero__media--top .hero-search .searching-form .searching-form__input,
+.hero .hero__container .hero__inner .hero__media .hero__media--top .hero-search .searching-form .searching-form__input::placeholder {
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 15px;
+  color: #ffffff;
+}
+.hero .hero__container .hero__inner .hero__media .hero__media--top .hero-search .hero-search__border {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 7px;
+}
+.hero .hero__container .hero__inner .hero__media .hero__media--top .hero-search .hero-search__list {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.hero .hero__container .hero__inner .hero__media .hero__media--top .hero-search .hero-search__list .hero-member {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+.hero .hero__container .hero__inner .hero__media .hero__media--top .hero-search .hero-search__list .hero-member .hero-member__info {
+  display: flex;
+  align-items: center;
+}
+.hero .hero__container .hero__inner .hero__media .hero__media--top .hero-search .hero-search__list .hero-member .hero-member__info .hero-member__img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 8px;
+}
+.hero .hero__container .hero__inner .hero__media .hero__media--top .hero-search .hero-search__list .hero-member .hero-member__info .hero-member__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.hero .hero__container .hero__inner .hero__media .hero__media--top .hero-search .hero-search__list .hero-member .hero-member__info .hero-member__text span:nth-child(1) {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+.hero .hero__container .hero__inner .hero__media .hero__media--top .hero-search .hero-search__list .hero-member .hero-member__info .hero-member__text span:nth-child(2) {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+.hero .hero__container .hero__inner .hero__media .hero__media--top .hero-search .hero-search__list .hero-member .hero-member__invite {
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #ffffff;
 }
 
 * {
@@ -92,7 +260,7 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  max-width: 212px;
+  min-width: 212px;
   height: var(--height);
   line-height: var(--height);
   background: #fc5a5a;

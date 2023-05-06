@@ -1,5 +1,5 @@
 @import "./header";
-
+@import "./main";
 * {
     box-sizing: border-box;
 }
@@ -49,4 +49,27 @@ a {
     font-weight: 500;
     font-size: 1.6rem;
     color: #ffffff;
+}
+
+.section-label {
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    color: #79d861;
+}
+
+.section-heading {
+    font-weight: 500;
+    font-size: 3.4rem;
+    line-height: 1.29;
+    color: #fff;
+}
+
+.section-desc {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #b0b0b0;
 }

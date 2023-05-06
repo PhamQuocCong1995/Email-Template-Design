@@ -28,7 +28,7 @@
             <div class="header__container">
                 <div class="header__inner">
                     <!-- Logo -->
-                    <a href="#!" class="logo"> Togi </a>
+                    <a href="#!" class="header__logo"> Togi </a>
                     <!-- Navbar -->
                     <nav class="navbar">
                         <ul class="navbar__list">
@@ -95,7 +95,7 @@
             <div class="hero__container">
                 <div class="hero__inner">
                     <!-- Social sidebar -->
-                    <div class="social__sidebar">
+                    <div class="social-sidebar">
                         <!-- Social list -->
                         <div class="social-list">
                             <!-- Social item -->
@@ -147,10 +147,12 @@
                             </a>
                         </div>
                         <div class="social-list__group">
-                            <div class="social-list__text">SCROLL DOWN</div>
+                            <div class="social-list__group-text">
+                                SCROLL DOWN
+                            </div>
                             <a href="#!">
                                 <svg
-                                    class="social-list__downarrow"
+                                    class="social-list__group-downarrow"
                                     width="7"
                                     height="20"
                                     viewBox="0 0 7 20"
@@ -167,133 +169,197 @@
                             </a>
                         </div>
                     </div>
+                    <!-- Hero main -->
+                    <div class="hero__main">
+                        <!-- Hero content -->
+                        <section class="hero__content">
+                            <h1 class="hero__content-heading">
+                                More than your average popup builder
+                            </h1>
+                            <p class="hero__content-desc">
+                                Everything you need—forms, sidebars, slide-ins,
+                                gamification—to turn your traffic into revenue.
+                            </p>
+                            <a href="#!" class="btn"> Start your free trial </a>
+                        </section>
 
-                    <!-- Hero content -->
-                    <section class="hero__content">
-                        <h1 class="hero__heading">
-                            More than your average popup builder
-                        </h1>
-                        <p class="hero__desc">
-                            Everything you need—forms, sidebars, slide-ins,
-                            gamification—to turn your traffic into revenue.
-                        </p>
-                        <a href="#!" class="btn"> Start your free trial </a>
-                    </section>
-
-                    <!-- Hero media -->
-                    <div class="hero__media">
-                        <div class="hero__media--top">
-                            <img
-                                src="./assets/image/hero-decor-01.svg"
-                                alt=""
-                                class="hero__media--decor"
-                            />
-                            <img
-                                src="./assets/image/hero-decor-02.svg"
-                                alt=""
-                                class="hero__media--decor"
-                            />
-                            <img
-                                src="./assets/image/hero-decor-03.svg"
-                                alt=""
-                                class="hero__media--decor"
-                            />
-                            <!-- Hero search -->
-                            <div class="hero-search">
-                                <form action="" class="searching-form">
-                                    <input
-                                        class="searching-form__input"
-                                        type="text"
-                                        name=""
-                                        id=""
-                                        placeholder="Search people"
-                                    />
-                                    <button
-                                        type="submit"
-                                        class="searching-form__submit"
-                                    >
-                                        <svg
-                                            width="15"
-                                            height="15"
-                                            viewBox="0 0 15 15"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
+                        <!-- Hero media -->
+                        <div class="hero__media">
+                            <div class="hero__media-top">
+                                <img
+                                    src="./assets/image/hero-decor-01.svg"
+                                    alt=""
+                                    class="hero__media-decor"
+                                />
+                                <img
+                                    src="./assets/image/hero-decor-02.svg"
+                                    alt=""
+                                    class="hero__media-decor"
+                                />
+                                <img
+                                    src="./assets/image/hero-decor-03.svg"
+                                    alt=""
+                                    class="hero__media-decor"
+                                />
+                                <!-- Hero search -->
+                                <div class="hero-search">
+                                    <form action="" class="searching-form">
+                                        <input
+                                            class="searching-form__input"
+                                            type="text"
+                                            name=""
+                                            id=""
+                                            placeholder="Search people"
+                                        />
+                                        <button
+                                            type="submit"
+                                            class="searching-form__submit"
                                         >
-                                            <circle
-                                                cx="6.84442"
-                                                cy="6.84439"
-                                                r="5.99237"
-                                                stroke="white"
-                                                stroke-width="1.5"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                            />
-                                            <path
-                                                d="M11.0122 11.3234L13.3616 13.6667"
-                                                stroke="white"
-                                                stroke-width="1.5"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                            />
-                                        </svg>
-                                    </button>
-                                </form>
-                                <div class="hero-search__border"></div>
-                                <!-- Hero member list -->
-                                <div class="hero-search__list">
-                                    <!-- Hero member 1 -->
-                                    <div class="hero-member">
-                                        <div class="hero-member__info">
-                                            <img
-                                                src="./assets/image/hero-member-01.jpg"
-                                                alt=""
-                                                class="hero-member__img"
-                                            />
-                                            <div class="hero-member__text">
-                                                <span>Ever Obi</span>
-                                                <span>UI/UX Designer</span>
+                                            <svg
+                                                width="15"
+                                                height="15"
+                                                viewBox="0 0 15 15"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <circle
+                                                    cx="6.84442"
+                                                    cy="6.84439"
+                                                    r="5.99237"
+                                                    stroke="white"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path
+                                                    d="M11.0122 11.3234L13.3616 13.6667"
+                                                    stroke="white"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </form>
+                                    <div class="hero-search__border"></div>
+                                    <!-- Hero member list -->
+                                    <div class="hero-search__list">
+                                        <!-- Hero member 1 -->
+                                        <div class="hero-member">
+                                            <div class="hero-member__info">
+                                                <img
+                                                    src="./assets/image/hero-member-01.jpg"
+                                                    alt=""
+                                                    class="hero-member__img"
+                                                />
+                                                <div class="hero-member__text">
+                                                    <span>Ever Obi</span>
+                                                    <span>UI/UX Designer</span>
+                                                </div>
                                             </div>
+                                            <span class="hero-member__invite">
+                                                Invite
+                                            </span>
                                         </div>
-                                        <span class="hero-member__invite">
-                                            Invite
-                                        </span>
-                                    </div>
 
-                                    <!-- Hero member 2 -->
-                                    <div class="hero-member">
-                                        <div class="hero-member__info">
-                                            <img
-                                                src="./assets/image/hero-member-02.jpg"
-                                                alt=""
-                                                class="hero-member__img"
-                                            />
-                                            <div class="hero-member__text">
-                                                <span>Nicolas Gr</span>
-                                                <span>UI/UX Designer</span>
+                                        <!-- Hero member 2 -->
+                                        <div class="hero-member">
+                                            <div class="hero-member__info">
+                                                <img
+                                                    src="./assets/image/hero-member-02.jpg"
+                                                    alt=""
+                                                    class="hero-member__img"
+                                                />
+                                                <div class="hero-member__text">
+                                                    <span>Nicolas Gr</span>
+                                                    <span>UI/UX Designer</span>
+                                                </div>
                                             </div>
+                                            <span class="hero-member__invite">
+                                                Invite
+                                            </span>
                                         </div>
-                                        <span class="hero-member__invite">
-                                            Invite
-                                        </span>
-                                    </div>
 
-                                    <!-- Hero member 3 -->
-                                    <div class="hero-member">
-                                        <div class="hero-member__info">
-                                            <img
-                                                src="./assets/image/hero-member-03.jpg"
-                                                alt=""
-                                                class="hero-member__img"
-                                            />
-                                            <div class="hero-member__text">
-                                                <span>Carpenter H.</span>
-                                                <span>UI/UX Designer</span>
+                                        <!-- Hero member 3 -->
+                                        <div class="hero-member">
+                                            <div class="hero-member__info">
+                                                <img
+                                                    src="./assets/image/hero-member-03.jpg"
+                                                    alt=""
+                                                    class="hero-member__img"
+                                                />
+                                                <div class="hero-member__text">
+                                                    <span>Carpenter H.</span>
+                                                    <span>UI/UX Designer</span>
+                                                </div>
                                             </div>
+                                            <span class="hero-member__invite">
+                                                Invite
+                                            </span>
                                         </div>
-                                        <span class="hero-member__invite">
-                                            Invite
-                                        </span>
                                     </div>
+                                </div>
+                                <!-- Hero rectangle -->
+                                <div class="hero-rectangle">
+                                    <!-- Hero rectangle item -->
+                                    <div
+                                        class="hero-rectangle__item hero-rectangle__item--green"
+                                    >
+                                        <span
+                                            class="hero-rectangle__barup"
+                                        ></span>
+                                        <span
+                                            class="hero-rectangle__bardown"
+                                        ></span>
+                                    </div>
+                                    <!-- Hero rectangle item -->
+                                    <div
+                                        class="hero-rectangle__item hero-rectangle__item--white"
+                                    >
+                                        <span
+                                            class="hero-rectangle__barup"
+                                        ></span>
+                                        <span
+                                            class="hero-rectangle__bardown"
+                                        ></span>
+                                    </div>
+                                    <!-- Hero rectangle item -->
+                                    <div
+                                        class="hero-rectangle__item hero-rectangle__item--pink"
+                                    >
+                                        <span
+                                            class="hero-rectangle__barup"
+                                        ></span>
+                                        <span
+                                            class="hero-rectangle__bardown"
+                                        ></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mess-sending">
+                                <input
+                                    class="mess-sending__input"
+                                    type="text"
+                                    name=""
+                                    id=""
+                                    placeholder="Hi, what the process?"
+                                />
+                                <div class="mess-sending__group">
+                                    <img
+                                        src="./assets/icon/hero-icon-01.svg"
+                                        alt=""
+                                    />
+                                    <img
+                                        src="./assets/icon/hero-icon-02.svg"
+                                        alt=""
+                                    />
+                                    <a href="#!" class="mess-sending__icon">
+                                        <img
+                                            src="./assets/icon/hero-icon-03.svg"
+                                            alt=""
+                                        />
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -301,5 +367,129 @@
                 </div>
             </div>
         </section>
+
+        <main style="height: 10000px">
+            <!-- Email Capture -->
+            <section class="emailcap">
+                <div class="emailcap__container">
+                    <div class="emailcap__inner">
+                        <!-- Emailcap media -->
+                        <div class="emailcap__media">
+                            <img
+                                src="./assets/image/multi-point.svg"
+                                alt=""
+                                class="emailcap__media-decor"
+                            />
+                            <div class="emailcap__media-bg">
+                                <div class="chart">
+                                    <div class="chart-group">
+                                        <div
+                                            class="chart-group__circle chart-group__circle--red"
+                                        ></div>
+                                        <div
+                                            class="chart-group__circle chart-group__circle--yellow"
+                                        ></div>
+                                        <div
+                                            class="chart-group__circle chart-group__circle--green"
+                                        ></div>
+                                    </div>
+                                    <div class="chart-border"></div>
+                                    <div class="chart-data">
+                                        <div class="chart-data__rectangle">
+                                            <div class="chart-data__blue">
+                                                <div
+                                                    class="chart-data__blue-bar"
+                                                ></div>
+                                                <div
+                                                    class="chart-data__blue-bar"
+                                                ></div>
+                                                <div
+                                                    class="chart-data__blue-bar"
+                                                ></div>
+                                                <div
+                                                    class="chart-data__blue-bar"
+                                                ></div>
+                                            </div>
+                                        </div>
+                                        <div class="chart-data__group">
+                                            <div class="chart-data__column">
+                                                <div
+                                                    class="chart-data__column-bar"
+                                                ></div>
+                                                <div
+                                                    class="chart-data__column-bar"
+                                                ></div>
+                                                <div
+                                                    class="chart-data__column-group"
+                                                >
+                                                    <div
+                                                        class="char-column"
+                                                    ></div>
+                                                    <div
+                                                        class="char-column"
+                                                    ></div>
+                                                    <div
+                                                        class="char-column"
+                                                    ></div>
+                                                    <div
+                                                        class="char-column"
+                                                    ></div>
+                                                </div>
+                                                <div
+                                                    class="chart-data__column-bottom"
+                                                ></div>
+                                            </div>
+                                            <div class="chart-data__pink">
+                                                <div
+                                                    class="chart-data__pink-bar"
+                                                ></div>
+                                                <div
+                                                    class="chart-data__pink-bar"
+                                                ></div>
+                                                <div
+                                                    class="chart-data__pink-bar"
+                                                ></div>
+                                                <div
+                                                    class="chart-data__pink-bar"
+                                                ></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Emailcap content -->
+                        <section class="emailcap__content">
+                            <div class="section-label">email capture</div>
+                            <h2
+                                class="section-heading emailcap__content-heading"
+                            >
+                                Multiple popups for multiple goals
+                            </h2>
+                            <p
+                                class="section-desc emailcap__content-desc--small"
+                            >
+                                From email capture to reducing cart abandonment,
+                                create multiple.
+                            </p>
+                            <p
+                                class="section-desc emailcap__content-desc--large"
+                            >
+                                From email capture to reducing cart abandonment,
+                                create multiple, personalized popups for
+                                different groups of visitors. From email capture
+                                to reducing cart abandonment, create multiple,
+                                personalized popups for different groups of
+                                visitors.
+                            </p>
+                            <a href="#!" class="btn emailcap__content-btn">
+                                Start your free trial
+                            </a>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </main>
     </body>
 </html>

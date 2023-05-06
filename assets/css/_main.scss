@@ -13,8 +13,6 @@
                 width: 49%;
                 height: 479px;
                 position: relative;
-                &-decor {
-                }
                 .emailcap__media-bg {
                     position: absolute;
                     width: 488px;
@@ -199,6 +197,74 @@
                 }
                 &-btn {
                     margin-top: 48px;
+                }
+            }
+        }
+    }
+}
+
+.subscriber {
+    margin-top: 75px;
+    padding: 80px 0;
+    &__container {
+        width: 988px;
+        max-width: calc(100% - 48px);
+        margin: 0 auto;
+        .subscriber__inner {
+            .subscriber__heading {
+                width: 409px;
+                margin-top: 8px;
+            }
+            .subscriber-list {
+                display: grid;
+                grid-template-columns: auto auto;
+                gap: 40px 28px;
+                margin-top: 64px;
+                &__item {
+                    padding: 37px 28px;
+                    border: 1px solid #292932;
+                    border-radius: 8px;
+                    background: transparent;
+                    display: flex;
+                    align-items: center;
+                    transition: 0.25s;
+                    &:hover {
+                        background: #292932;
+                        cursor: pointer;
+                        & .subscriber-list__item-icon {
+                            background: #fc5a5a;
+                        }
+                    }
+
+                    &-icon {
+                        width: 96px;
+                        height: 96px;
+                        border-radius: 50%;
+                        background: #292932;
+                        border-radius: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        transition: 0.25s;
+                    }
+                    &-text {
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 24px;
+                        & span:nth-child(1) {
+                            font-weight: 500;
+                            font-size: 2rem;
+                            color: #fff;
+                        }
+                        & span:nth-child(2) {
+                            width: 260px;
+                            font-weight: 400;
+                            font-size: 1.6rem;
+                            line-height: 1.5;
+                            color: rgba(255, 255, 255, 0.75);
+                            margin-top: 8px;
+                        }
+                    }
                 }
             }
         }
